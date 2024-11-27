@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Tracker</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <%- include('./header') %>
+
+  <div class="container">
+
+  <!--Add new assignment form-->
+    <form action="/assignments" method="POST">
+      <div>
+        <label for="name">Assignment Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="description">Description</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div>
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" name="dueDate" required>
+      </div>
+
+    <!--submit button to add entry to database-->
+      <button type="submit" class="submit-btn">Add Assignment</button>
+    </form>
+    
+  <!--View assignemnts-->
+  <a href="/assignments" class="btn view-btn">View Assignments</a>
+
+  </div>
+
+  <%- include('./footer') %>
+</body>
+</html>

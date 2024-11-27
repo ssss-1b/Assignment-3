@@ -1,0 +1,95 @@
+/* Style for the body*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: wheat;
+    color: darkblue;
+  }
+  
+/* Style for the header*/
+  header {
+    background: rebeccapurple;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+/* Style for header title*/
+  header h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+  
+/* Style for the footer*/
+  footer {
+    background: rebeccapurple;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+/* Style for the container*/
+  .container {
+    max-width: 900px;
+    margin: 2px auto;
+    padding: 22px;
+    background: whitesmoke;
+  }
+
+/* Style for the form*/ 
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 3px;
+    font-size: 10px;
+  }
+  
+/* Style for all buttons*/
+  button, .btn {
+    color: whitesmoke;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+  }
+
+  /*Style for view assignments button*/
+  .view-btn {
+  background: darkblue; 
+  font-weight: bold; 
+  }
+
+/* Style for the submit button*/
+  .submit-btn{
+    background:cornflowerblue;
+    font-weight: bold; 
+  }
+
+
+/* Style for the delete button*/
+  .delete-btn {
+    background-color: red; 
+    font-weight: bold; 
+  }
+  
+/* Style for edit button*/
+  .edit-btn {
+    background-color: green; 
+    font-weight: bold; 
+  }
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Assignment</title>
+</head>
+<body>
+  <%- include('./header') %>
+  <div class="container">
+    <h1>Edit Assignment</h1>
+    <% if (error) { %>
+      <div class="error-message"><%= error %></div>
+    <% } %>
+
+    <!---Editing assignment form-->
+    <form action="/assignments/<%= assignment._id %>?_method=PUT" method="POST">
+      <div>
+        <label for="name">Assignment Name</label>
+        <input type="text" id="name" name="name" value="<%= assignment.name %>" required>
+      </div>
+      <div>
+        <label for="description">Description</label>
+        <textarea id="description" name="description" required><%= assignment.description %></textarea>
+      </div>
+      <div>
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" name="dueDate" value="<%= assignment.dueDate ? assignment.dueDate.toISOString().split('T')[0] : '' %>" required>
+      </div>
+      <button type="submit" class="submit-btn">Add Assignment</button>
+    </form>
+  </div>
+  
+  <%- include('./footer') %>
+</body>
+</html>
