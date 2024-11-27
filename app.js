@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
-const assignmentRoutes = require('./routes/assignments.js');
+const assignmentRoutes = require('./routes/assignments');
 app.use('/assignments', assignmentRoutes);
 
 app.get('/', (req, res) => {
