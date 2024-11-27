@@ -8,8 +8,4 @@ Site Features:
 - View Assignment: Users can view each assignment in a list format
 - Delete Assignment: Users can delete assignment entry when it is no longer needed
 
-HOME PAGE VIEW:
 
-
-
-ASSIGNMENT LIST VIEW:
